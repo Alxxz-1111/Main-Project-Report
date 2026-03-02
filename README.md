@@ -158,17 +158,6 @@ The Samba service was running with elevated privileges, which granted immediate 
 
 ---
 
-## 📁 Repository Structure
-
-```
-kioptrix-pentest
-│
-├── README.md
-├── Architecture/
-├── scans/
-├── exploits/
-├── evidence/
-```
 
 ---
 
@@ -185,11 +174,6 @@ This project improved practical skills in:
 
 ---
 
-## ⚠️ Disclaimer
-
-This project was conducted **strictly for educational purposes** in an isolated lab environment.
-
-No real-world systems were targeted.
 
 ---
 
